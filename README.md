@@ -1,4 +1,4 @@
-# node
+# node.js
 <h4>
 
 ```
@@ -66,16 +66,23 @@ npm : node.js packages
   $sudo systemctl restart code-server //재시작
   $sudo systemctl status code-server 
   
-  use NginX,,
+  >> use NginX,,
   https://hakawati.co.kr/445
   
-  - - with cloud server
+  >> with cloud server
   https://blog.naver.com/afy/222720018657
   https://youngq.tistory.com/97?category=868706
   
   !! Oracle Free Tier !! (https://www.oracle.com/kr/cloud/free/)
   https://apachezone.com/server/26
   iptable : https://sir.kr/cm_free/1563305
+  
+* Node.js (https://nodejs.org/ko/download/)
+
+  node version management !! 가 중요
+  NVM (https://github.com/nvm-sh/nvm) > Install on WSL (https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl)
+  tj/n (https://github.com/tj/n)
+  
   
   
   ```
