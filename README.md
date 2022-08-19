@@ -14,11 +14,11 @@ C : node-gyp
 WebAssembly : ver. Node 12 more
 npm : node.js packages
 
-Deveploment Environment
+* Deveploment Environment
 
-online code editor : glitch (https://glitch.com/)
-minimal node
-ex) server.js
+- online code editor : glitch (https://glitch.com/)
+  minimal node
+  ex) server.js
   const http = require('http')
   const server = http.createServer((req, res_ => {
     res.statusCode = 200
@@ -29,9 +29,8 @@ ex) server.js
     console.log('The server is listening at port: ', PORT)
   })
   
-  Visual Studio Code
-  code-server
-  https://github.com/coder/code-server
+- Visual Studio Code
+  code-server (https://github.com/coder/code-server)
   
   > work on WSL
   $sudo apt-get update
@@ -53,16 +52,30 @@ ex) server.js
   password: [..q.sd....]
   cert: [true]/[false]
   
+  plus,,
+  https://velog.io/@handwoong/Code-server-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
+  https://blog.naver.com/PostView.naver?blogId=kinphw&logNo=222400844068&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
+  
   Ubuntu 실행 시 자동으로 code-server가 수행 되도록 할려면
   서비스 등록을 해준다.
   $sudo systemctl enable --now code-server
   //sudo systemctl enable --now code-server@$USER
-  
+  ! WSL에서는 systemctl 를 지원하지 않는다 //systemctl(x) -> service(o)
   $sudo systemctl start code-server //실행
   $sudo systemctl stop code-server //중지
   $sudo systemctl restart code-server //재시작
   $sudo systemctl status code-server 
   
-  use NginX => https://hakawati.co.kr/445
+  use NginX,,
+  https://hakawati.co.kr/445
+  
+  - - with cloud server
+  https://blog.naver.com/afy/222720018657
+  https://youngq.tistory.com/97?category=868706
+  
+  !! Oracle Free Tier !! (https://www.oracle.com/kr/cloud/free/)
+  https://apachezone.com/server/26
+  iptable : https://sir.kr/cm_free/1563305
+  
   
   ```
