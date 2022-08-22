@@ -19,15 +19,15 @@ npm : node.js packages
 - online code editor : glitch (https://glitch.com/)
   minimal node
   ex) server.js
-  const http = require('http')
-  const server = http.createServer((req, res_ => {
-    res.statusCode = 200
-    res.end('Hello!')
-  })
-  const PORT = 3000
-  server.listen(PORT, () => {
-    console.log('The server is listening at port: ', PORT)
-  })
+    const http = require('http')
+    const server = http.createServer((req, res_ => {
+      res.statusCode = 200
+      res.end('Hello!')
+    })
+    const PORT = 3000
+    server.listen(PORT, () => {
+      console.log('The server is listening at port: ', PORT)
+    })
   
 - Visual Studio Code
   code-server (https://github.com/coder/code-server)
@@ -79,8 +79,13 @@ npm : node.js packages
   
 * Node.js (https://nodejs.org/ko/download/)
 
-  node version management !! 가 중요
+  node version management !! 가 중요 | node가 설치되면 npm(node package manager)가 같이 설치된다.
   NVM (https://github.com/nvm-sh/nvm) > Install on WSL (https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl)
+    $curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+    $nvm ls
+    
+    $wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
   tj/n (https://github.com/tj/n)
   
   
