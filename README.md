@@ -1,7 +1,6 @@
 # node.js
-<h4>
 
-Node.js hystory
+Node.js history
 ```
 2008 Google - Chrome - V8(JS engine) open : open source
 2009 Ryan Dahl server side java script dev. : node.js
@@ -58,6 +57,7 @@ npm : node.js packages
   ```
   plus,,
   https://velog.io/@handwoong/Code-server-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
+  
   https://blog.naver.com/PostView.naver?blogId=kinphw&logNo=222400844068&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
   
   Ubuntu 실행 시 자동으로 code-server가 수행 되도록 할려면
@@ -77,16 +77,23 @@ npm : node.js packages
   
   >> with cloud server
   https://blog.naver.com/afy/222720018657
+  
   https://youngq.tistory.com/97?category=868706
   
   !! Oracle Free Tier !! (https://www.oracle.com/kr/cloud/free/)
+  
   https://apachezone.com/server/26
+  
   iptable : https://sir.kr/cm_free/1563305
   
 * Node.js (https://nodejs.org/ko/download/)
-
+  
+  NVM (https://github.com/nvm-sh/nvm) 
+  
+  > Install on WSL (https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl)
+```
   node version management !! 가 중요 | node가 설치되면 npm(node package manager)이 같이 설치된다.
-  NVM (https://github.com/nvm-sh/nvm) > Install on WSL (https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl)
+  
     $curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
     or 
     $wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -95,6 +102,6 @@ npm : node.js packages
     $nvm ls-remote --lts
         > https 접속이 안됨
         
-    
+```
   tj/n (https://github.com/tj/n)
   
