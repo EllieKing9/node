@@ -19,6 +19,7 @@ npm : node.js packages
 * Deveploment Environment
 
 - online code editor : glitch (https://glitch.com/)
+  ```
   minimal node
   ex) server.js
     const http = require('http')
@@ -30,10 +31,11 @@ npm : node.js packages
     server.listen(PORT, () => {
       console.log('The server is listening at port: ', PORT)
     })
+  ```
   
 - Visual Studio Code
   code-server (https://github.com/coder/code-server)
-  
+  ```
   > work on WSL
   $sudo apt-get update
   $sudo apt-get install wget ca-certificates
@@ -53,13 +55,14 @@ npm : node.js packages
   auth: [password]/[none]
   password: [..q.sd....]
   cert: [true]/[false]
-  
+  ```
   plus,,
   https://velog.io/@handwoong/Code-server-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
   https://blog.naver.com/PostView.naver?blogId=kinphw&logNo=222400844068&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
   
   Ubuntu 실행 시 자동으로 code-server가 수행 되도록 할려면
   서비스 등록을 해준다.
+  ```
   $sudo systemctl enable --now code-server
   //sudo systemctl enable --now code-server@$USER
   ! WSL에서는 systemctl 를 지원하지 않는다 //systemctl(x) -> service(o)
@@ -67,6 +70,7 @@ npm : node.js packages
   $sudo systemctl stop code-server //중지
   $sudo systemctl restart code-server //재시작
   $sudo systemctl status code-server 
+  ```
   
   >> use NginX,,
   https://hakawati.co.kr/445
