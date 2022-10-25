@@ -1,6 +1,7 @@
 # node.js
 <h4>
 
+Node.js hystory
 ```
 2008 Google - Chrome - V8(JS engine) open : open source
 2009 Ryan Dahl server side java script dev. : node.js
@@ -13,7 +14,8 @@ Node.js improves low perfomance binding C & WebAssembly(??) module
 C : node-gyp
 WebAssembly : ver. Node 12 more
 npm : node.js packages
-
+```
+  
 * Deveploment Environment
 
 - online code editor : glitch (https://glitch.com/)
@@ -92,6 +94,3 @@ npm : node.js packages
     
   tj/n (https://github.com/tj/n)
   
-  
-  
-  ```
