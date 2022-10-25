@@ -1,6 +1,6 @@
 # node.js
 
-Node.js history
+History
 ```
 2008 Google - Chrome - V8(JS engine) open : open source
 2009 Ryan Dahl server side java script dev. : node.js
@@ -14,11 +14,10 @@ C : node-gyp
 WebAssembly : ver. Node 12 more
 npm : node.js packages
 ```
-  
-* Deveploment Environment
 
+Deveploment Environment
 - online code editor : glitch (https://glitch.com/)
-  ```
+```
   minimal node
   ex) server.js
     const http = require('http')
@@ -72,10 +71,10 @@ npm : node.js packages
   $sudo systemctl status code-server 
   ```
   
-  >> use NginX,,
+  use NginX,,
   https://hakawati.co.kr/445
   
-  >> with cloud server
+  with cloud server
   https://blog.naver.com/afy/222720018657
   
   https://youngq.tistory.com/97?category=868706
