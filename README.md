@@ -40,19 +40,20 @@ Deveploment Environment
   
   $sudo curl -fsSL https://code-server.dev/install.sh | sh
   //curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
-  or manually
+  
+  or manually //파일을 직접 다운로드(download release file)
   $sudo mkdir /mnt/blank
-  파일을 직접 다운로드(download release file)
   $sudo curl -fOL https://github.com/coder/code-server/releases/download/v4.5.2/code-server_4.5.2_amd64.deb
   $sudo dpkg -i code-server_4.5.2_amd64.deb
-  reboot
+  //$sudo reboot
   $code-server //최초 실행시 .config 파일 생성(first excute : Wrote default config file to ~/.config/code-server/config.yaml)
   ctrl + z
   $nano ~/.config/code-server/config.yaml
   bind-addr: [ip]:[port]  ex)127.0.0.1:8080
   auth: [password]/[none]
   password: [..q.sd....]
-  cert: [true]/[false]
+  cert: [true]/[false]/[path, *.pem]
+  cert-key: [path, *key.pem]
   ```
   plus,,
   https://velog.io/@handwoong/Code-server-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
