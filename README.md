@@ -1,6 +1,6 @@
 # node.js
 
-History
+■ History
 ```
 2008 Google - Chrome - V8(JS engine) open : open source
 2009 Ryan Dahl server side java script dev. : node.js
@@ -15,7 +15,7 @@ WebAssembly : ver. Node 12 more
 npm : node.js packages
 ```
 
-Deveploment Environment
+■ Deveploment Environment
 - online code editor : glitch (https://glitch.com/)
   ```
   minimal node
@@ -71,9 +71,8 @@ Deveploment Environment
   
   
   
-* Node.js (https://nodejs.org/ko/download/)
-  
-  - NVM (https://github.com/nvm-sh/nvm)
+■ Node.js (https://nodejs.org/ko/download/)
+- NVM (https://github.com/nvm-sh/nvm)
   ```
   nvm를 통해서 node를 버젼별로 설치하고 관리할 수 있다.
   node version management !!가 매우 중요 하며
@@ -94,5 +93,6 @@ Deveploment Environment
   ```
   ```
   
-  - tj/n (https://github.com/tj/n)
+- tj/n (https://github.com/tj/n)
   
+■ 
