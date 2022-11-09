@@ -17,7 +17,7 @@ npm : node.js packages
 
 Deveploment Environment
 - online code editor : glitch (https://glitch.com/)
-```
+  ```
   minimal node
   ex) server.js
     const http = require('http')
@@ -33,8 +33,9 @@ Deveploment Environment
   
 - Visual Studio Code
   code-server (https://github.com/coder/code-server)
+  
+  1. work on WSL
   ```
-  > work on WSL
   $sudo apt-get update
   $sudo apt-get install wget ca-certificates
   
@@ -49,20 +50,13 @@ Deveploment Environment
   $code-server //최초 실행시 .config 파일 생성(first excute : Wrote default config file to ~/.config/code-server/config.yaml)
   ctrl + z
   $nano ~/.config/code-server/config.yaml
-  bind-addr: [ip]:[port]  ex)127.0.0.1:8080
-  auth: [password]/[none]
-  password: [..q.sd....]
-  cert: [true]/[false]/[path, *.pem]
-  cert-key: [path, *key.pem]
-  ```
-  plus,,
-  https://velog.io/@handwoong/Code-server-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95
+    bind-addr: [ip]:[port]  ex)127.0.0.1:8080
+    auth: [password]/[none]
+    password: [..q.sd....]
+    cert: [true]/[false]/[path, *.pem]
+    cert-key: [path, *key.pem]
   
-  https://blog.naver.com/PostView.naver?blogId=kinphw&logNo=222400844068&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView
-  
-  Ubuntu 실행 시 자동으로 code-server가 수행 되도록 할려면
-  서비스 등록을 해준다.
-  ```
+  // Ubuntu 실행 시 자동으로 code-server가 수행 되도록 할려면 서비스 등록을 해준다.
   $sudo systemctl enable --now code-server
   //sudo systemctl enable --now code-server@$USER
   ! WSL에서는 systemctl 를 지원하지 않는다 //systemctl(x) -> service(o)
@@ -71,37 +65,34 @@ Deveploment Environment
   $sudo systemctl restart code-server //재시작
   $sudo systemctl status code-server 
   ```
+  2. work on Oracle Cloud (https://github.com/EllieKing9/OCI_code-server)
+  ```
+  ```
   
-  use NginX,,
-  https://hakawati.co.kr/445
   
-  with cloud server
-  https://blog.naver.com/afy/222720018657
-  
-  https://youngq.tistory.com/97?category=868706
-  
-  !! Oracle Free Tier !! (https://www.oracle.com/kr/cloud/free/)
-  
-  https://apachezone.com/server/26
-  
-  iptable : https://sir.kr/cm_free/1563305
   
 * Node.js (https://nodejs.org/ko/download/)
   
-  NVM (https://github.com/nvm-sh/nvm) 
-  
-  > Install on WSL (https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl)
-```
-  node version management !! 가 중요 | node가 설치되면 npm(node package manager)이 같이 설치된다.
-  
+  - NVM (https://github.com/nvm-sh/nvm)
+  ```
+  nvm를 통해서 node를 버젼별로 설치하고 관리할 수 있다.
+  node version management !!가 매우 중요 하며
+  node가 설치되면 npm(node package manager)이 같이 설치된다.
+  ```
+  1. Install on WSL (https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl)
+  ```
     $curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
     or 
     $wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
     
     $nvm ls
     $nvm ls-remote --lts
-        > https 접속이 안됨
-        
-```
-  tj/n (https://github.com/tj/n)
+        > https 접속이 안됨? (회사 방화벽)
+  ```
+  
+  2. Install on Oracle Cloud
+  ```
+  ```
+  
+  - tj/n (https://github.com/tj/n)
   
