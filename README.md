@@ -73,11 +73,11 @@ npm : node.js packages
   
 ■ Node.js (https://nodejs.org/ko/download/)
 - NVM (https://github.com/nvm-sh/nvm)
-  ```
-  nvm를 통해서 node를 버젼별로 설치하고 관리할 수 있다.
-  node version management !!가 매우 중요 하며
-  node가 설치되면 npm(node package manager)이 같이 설치된다.
-  ```
+```
+nvm를 통해서 node를 버젼별로 설치하고 관리할 수 있다.
+node version management !!가 매우 중요 하며
+node가 설치되면 npm(node package manager)이 같이 설치된다.
+```
   1. Install on WSL (https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl)
   ```
     $curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
