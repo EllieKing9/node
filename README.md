@@ -77,24 +77,70 @@ npm : node.js packages
   ```
   nvm를 통해서 node를 버젼별로 설치하고 관리할 수 있다.
   node version management !!가 매우 중요 하며
-  node가 설치되면 npm(node package manager)이 같이 설치된다.
   ```
   
   1. Install on WSL (https://docs.microsoft.com/ko-kr/windows/dev-environment/javascript/nodejs-on-wsl)
   ```
-    $curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-    or 
-    $wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  $curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  or 
+  $wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
     
-    $nvm ls
-    $nvm ls-remote --lts
-        > https 접속이 안됨? (회사 방화벽)
+  $nvm ls
+  $nvm ls-remote --lts
+       > https 접속이 안됨? (회사 방화벽)
   ```
   
   2. Install on Oracle Cloud
   ```
+  
   ```
   
 - tj/n (https://github.com/tj/n)
+  ```
+  설치?
   
-■ 
+  $n
+    설치된 버전 리스트 확인 > 버전 선택 > 선택한 버전의 node로 환경 자동으로 세팅됨
+  $node --version // 버전 확인
+  $n latest // 가장 최신 버전의 node 설치
+  $echo SN_PREFIX // node가 설치된 (상위)경로 표시 ex)~/n/n/versions/node/12.18.3 ..
+  
+  
+  
+  ```
+  
+■ NPM(Node Pakage Management)
+
+node가 설치되면 npm(node package manager)이 같이 설치된다.
+
+- with VScode & terminal
+  package.json 만들기
+  ```
+  $npm init -y //package.json 자동 생성
+    "scripts": {
+      "test": "echo \"Hello, world!\""
+    }
+  $npm run test
+  ```
+  
+  main.js 만들기
+  ```
+  
+  ```
+  
+  Formatting: Prettier
+  ```
+  $npm install --save-dev prettier // 설치
+  // node_modules 폴더 생성
+  // package-lock.json 생성
+  // package.json 에 의존성 생성
+      "devDependencies": {
+        "prettier": "^2.2.1" 
+      }
+      
+  
+  ```
+  
+  Linting
+  ```
+  ```
