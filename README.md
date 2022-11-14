@@ -32,7 +32,7 @@ npm : node.js packages
   ```
   
 - Visual Studio Code
-  code-server (https://github.com/coder/code-server)
+  co$de-server (https://github.com/coder/code-server)
   
   1. work on WSL
   ```
@@ -98,18 +98,27 @@ npm : node.js packages
 - tj/n (https://github.com/tj/n)
   ```
   // 설치
-  $curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
-  or
-  $npm install -g n // node and npm are available
-  
+  $sudo mkdir /mnt/install
+  $cd /mnt/install
+  $sudo curl -L https://raw.githubusercontent.com/tj/n/master/bin/n -o n
+  $sudo bash n lts
+    installing : node-v18.12.1
+         mkdir : /usr/local/n/versions/node/18.12.1
+         fetch : https://nodejs.org/dist/v18.12.1/node-v18.12.1-linux-x64.tar.xz
+       copying : node/18.12.1
+     installed : v18.12.1 (with npm 8.19.2)
+  // now node and npm are available
+  $sudo npm install -g n
+    npm notice New major version of npm available! 8.19.2 -> 9.1.1
+    npm notice Changelog: https://github.com/npm/cli/releases/tag/v9.1.1
+    npm notice Run npm install -g npm@9.1.1 to update!
   $n
-    설치된 버젼 리스트 확인 > 버젼 선택 > 선택한 버젼의 node로 환경 자동으로 세팅됨
+    설치된 버젼 리스트 확인 및 > 버젼 선택 > 선택한 버젼의 node로 환경 자동으로 세팅됨
   $node --version // 버젼 확인
   $n latest // 가장 최신 버젼의 node 설치
   $n version // 해당 버젼의 node 설치
   $n rm version // 해당 (cached)버젼의 node 삭제
-  $echo N_PREFIX // node가 설치된 (상위)경로 표시 ex)~/n/n/versions/node/12.18.3 ..
-  
+  // ? $echo SN_PREFIX // node가 설치된 (상위)경로 표시 ex)~/n/n/versions/node/12.18.3 ..
   
   ```
   
