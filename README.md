@@ -32,7 +32,7 @@ npm : node.js packages
   ```
   
 - Visual Studio Code
-  co$de-server (https://github.com/coder/code-server)
+  code-server (https://github.com/coder/code-server)
   
   1. work on WSL
   ```
@@ -126,8 +126,7 @@ npm : node.js packages
 
 node가 설치되면 npm(node package manager)이 같이 설치된다.
 
-- with VScode & terminal
-  package.json 만들기
+- package.json 만들기(with VScode & terminal)
   ```
   $npm init -y //package.json 자동 생성
     "scripts": {
