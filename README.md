@@ -121,7 +121,7 @@ npm : node.js packages
   
   ```
   
-■ NPM(Node Pakage Management)
+■ NPM(Node Pakage Management) 
 
 node가 설치되면 npm(node package manager)이 같이 설치된다.
 
@@ -139,6 +139,8 @@ node가 설치되면 npm(node package manager)이 같이 설치된다.
   ```
   
   ```
+  
+  Node.js and JavaScript in Visual Studio Code (https://code.visualstudio.com/learn/educators/nodejs)
   
   1. Formatting (Prettier)
   ```
