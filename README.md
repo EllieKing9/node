@@ -143,9 +143,14 @@ node가 설치되면 npm(node package manager)이 같이 설치된다.
   Node.js and JavaScript in Visual Studio Code (https://code.visualstudio.com/learn/educators/nodejs)
   
   1. Formatting (Prettier)
+  - https://velog.io/@dum6894/%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD-vscode-prettier-%EC%84%A4%EC%B9%98-%EB%B0%8F-%EC%82%AC%EC%9A%A9%EB%B2%95
+  - https://teddy8.github.io/2019/07/29/ide-vscode-prettier/
+  - https://ux.stories.pe.kr/150
+  
+  
   ```
   // Prettier 설치
-  $npm install --save-dev prettier
+  $npm install --save-dev prettier 
     + node_modules 폴더 생성됨
       |_bin
       |_prettier
@@ -175,13 +180,17 @@ node가 설치되면 npm(node package manager)이 같이 설치된다.
         }
   ```
   
-  2. Linting (ESLint)
+  2. Linting (ESLint: Auto-formatting 자동 서식 지정)
+  
+  http://jhyunnn.tistory.com/116
+  
   ```
-  //eslint 패키지 설치 (VS Code)
+  // ESLint extension 설치 (VS Code)
     // 아래 설정 폴더 및 생성 자동 생성 확인?
-    
-  // ESLint 설치
-  $npm install --save-dev eslint
+  
+  // ESLint package 설치
+  //$npm install -g eslint (-g : 글로벌)
+  $npm install --save-dev eslint (--save-dev : 로컬 프로젝트 폴더)
     + package.json 에 의존성 추가됨
       "devDependencies": {
       "eslint": "^7.24.0",
@@ -205,7 +214,10 @@ node가 설치되면 npm(node package manager)이 같이 설치된다.
   $npm install --save-dev eslint-plugin-node
   
   // 사용 설정
-    > .eslintrc.js 파일 생성 (VS Code)
+    //$npm init @eslint/config 
+    //or
+    //$(./node_modules/.bin/)eslint --init or Create ESLint configuration (VS Code)
+    > .eslintrc.js 파일 생성 (VS Code) // 위 command 사용시에는 자동 생성
       module.exports = { // Allow 작업 필요
         extends: ['airbnb-base', 'plugin:node/recommended', 'prettier'], //'prettier' 맨 뒤!로
       }
