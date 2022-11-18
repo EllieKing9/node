@@ -112,6 +112,11 @@
     array rest
   
   // functional approach
+  
+  // promise
+  
+  // polyfill, transpile
+  
   ```
 
 
