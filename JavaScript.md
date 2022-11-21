@@ -80,7 +80,7 @@
   
   ```
   
-■ TC39 - ECMA script (https://tc39.es)
+■ TC39 - ECMAscript (https://tc39.es)
 ■ node.green (https://node.green/): node 버젼별로 지원하는 ECMA script 확인 가능 
 
 ■ Modern JavaScript
@@ -116,7 +116,40 @@
   // promise
   
   // polyfill, transpile
-  
+    polyfill: (ECMAScript)JS standar library에 표준으로 등록되어 있으나, 
+              아직 브라우저나 Node.js에서 구현되지 않은 기능을 미리 써 볼 수 있도록 만들어진 구현체
+      |_core.js
+        // @ts-check
+        
+        $npm install core-js //해당 Node.js가 아직 포함하지 않는 버전인 경우
+        //import 'core-js'; 
+        or
+        require('core-js')
+        
+        > jsconfig.json > 
+          "compilerOptions": {
+            ..
+            "lib": ["es2019"],
+            ..
+          },
+    
+    Transpile: 코드를 A 언어에서 B 언어로 변환하는 작업
+               신규 언어 스펙(ES6+)에서 구형 언어 스펙(ES5 등)으로 트랜스파일을 할 때 주로 사용
+               Babel, TSC(TypeScript Compiler), ESBuild 등
+      $npm install esbuild
+      //$esbuild main.js --bundle --outfile=build/main.js --target=node10.4
+      > package.json >
+        "scripts": {
+          ..
+          "build": "esbuild src/main.js --bundle --outfile=build/main.js --target=node10.4"
+          ..
+        },
+      $npm run build
+      > build 폴더의 > main.js 로 변환 생성됨
+      
   ```
 
+■ RESTful API
+  ```
+  ```
 
